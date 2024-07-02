@@ -3,7 +3,7 @@
 링크 : bit.ly/4bHljhT
 
 ![bit ly_4bHljhT](https://github.com/daeungo1/azure-openai-prompthon/assets/122502313/f891824e-28b9-4a48-bfa7-88c863eb4316)
-
+PDF자료 : [2024_KT_AOAI_Prompthon.pdf](https://github.com/user-attachments/files/16061561/2024_KT_AOAI_Prompthon.pdf)
 
 ## 시작하기
 Codespace 환경을 통해서 개발 환경을 빠르게 시작할 수 있습니다.  
