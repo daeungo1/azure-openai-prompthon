@@ -1,3 +1,4 @@
+# AI 워크샵 
 # GPT 활용 Use Case & Experiment 샘플 솔루션
 이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.
 
@@ -14,7 +15,7 @@ Codespace 환경을 통해서 개발 환경을 빠르게 시작할 수 있습니
 Python 실행을 위한 Runtime 환경은 `python=3.11.4` 추천합니다. 위 버튼을 누르고 약 7분이 경과되면, .devcontainer에 정의된 개발 환경 및 라이브러리 설치가 완료되며, 브라우저에 Visual Studio Code IDE가 표시됩니다.  
 
 ### 실습에 사용하는 GPT 버전
-gpt-4o 모델 또는 gpt-4-turbo 최신 모델을 활용하는 것을 추천 드립니다. (2024-06-25 기준)
+gpt-4o 모델 또는 gpt-4-turbo 최신 모델을 활용하는 것을 추천 드립니다. (2024-07-15 기준)
 
 ### 설정하기
 >안전한 로컬 환경에서의 키관리를 위해 실습에 필요한 API Endpoint 또는 API Key는 ***.env*** 파일을 활용하는 것을 강력히 추천합니다. 예를 들어 [.env.sample](./.env.sample) 파일을 복사하여 `.env` 파일을 만들고 해당 API KEY 정보를 입력하여 사용합니다.
