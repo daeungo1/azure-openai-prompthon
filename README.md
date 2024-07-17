@@ -1,4 +1,4 @@
-# AI 워크샵 
+# Microsoft AI 워크샵 
 # GPT 활용 Use Case & Experiment 샘플 솔루션
 이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.
 
