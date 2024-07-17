@@ -36,7 +36,9 @@ GPT(Generative Pre-trained Transformer)는 OpenAI에서 개발한 LLM(Large Lang
 참고: `Codespace`는 GitHub 개인 계정에게 월 15GB의 저장공간과 120 시간/core의 VM을 무료로 제공합니다. [자세한 가격 정보 참고는 클릭](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces)
 
 ## 프로그램 자료
-이 Repository는 https://github.com/Azure/azure-openai-samples 을 기반으로 만들었습니다.  
+이 Repository는 아래 Azure github 공식 repo 기반으로 만들었습니다.  
+  https://github.com/Azure/azure-openai-samples
+  https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/Assistants
 
 
 ## 참고 고객 사례
