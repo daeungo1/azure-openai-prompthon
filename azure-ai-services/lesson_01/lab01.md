@@ -28,7 +28,7 @@ Azure 구독이 필요하며, AI 프로젝트와 AI 허브 리소스, 콘텐츠 
 
 #####  AI 프로젝트 및 AI 허브 리소스 생성
 
-먼저 Azure AI Studio에서 프로젝트를 생성하여 시작해 보겠습니다.
+먼저 Azure AI Studio에서 허브 및 프로젝트를 생성하여 시작할 수 있습니다. (실습에서는 미리 생성 완료)
 
 브라우저에서 다음 주소를 입력하고 엔터 키를 눌러 이동합니다: https://ai.azure.com
 
@@ -36,27 +36,18 @@ Azure 계정으로 로그인한 후 다음 화면이 표시됩니다:
 
 ![LLMOps Workshop](images/16.12.2023_13.35.18_REC.png)
 
-**빌드** 탭에서 **새 AI 프로젝트**를 선택하여 프로젝트를 생성합니다.
+**빌드** 탭에서 **새 허브**를 선택하여 생성합니다.
+AI Studio 첫 화면에서 연결 리소스 선택
+<img width="976" alt="image" src="https://github.com/user-attachments/assets/6463080e-f7cb-422f-bad8-8a6faa8c303a">
+생성하기
+<img width="755" alt="image" src="https://github.com/user-attachments/assets/5de7ddfc-0e18-49d8-9059-4f8333474552">
 
-프로젝트에 고유한 이름을 선택합니다.
 
-![LLMOps Workshop](images/08.04.2024_14.47.08_REC.png)
+프로젝트를 생성하기 위해 허브에 들어간 후 **프로젝트 생성**을 선택합니다.
+<img width="979" alt="image" src="https://github.com/user-attachments/assets/aa788897-9256-4bbe-bd9a-4d0ac2f77ca7">
 
-**새 AI 허브 리소스 생성** 링크를 선택하고 프로젝트 리소스가 생성될 AI 허브의 이름을 선택합니다.
+- 허브의 리소스를 프로젝트간 공유를 할 수 있습니다.
 
-![LLMOps Workshop](images/08.04.2024_14.47.41_REC.png)
-
-> 참고: GPT-4 모델과 텍스트 임베딩 ada-002가 사용 가능한 지역을 선택하세요.
-
-이 화면에서 **새 Azure AI 검색 생성** 옵션을 선택합니다. 이 서비스는 다음 단계에서 사용됩니다.
-
-![LLMOps Workshop](images/08.04.2024_14.48.05_REC.png)
-
-마지막으로, 프로젝트 리소스를 생성하기 위해 **프로젝트 생성**을 선택합니다.
-
-![LLMOps Workshop](images/08.04.2024_14.48.46_REC.png)
-
-![LLMOps Workshop](images/08.04.2024_14.49.04_REC.png)
 
 ##### Azure OpenAI 모델 배포
 
