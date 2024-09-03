@@ -164,6 +164,7 @@ Agent: Thank you, Mr. Pérez. Have a good day. Goodbye.
 
 결과:
 
-![LLMOps Workshop](images/17.12.2023_20.36.17_REC.png)
+<img width="1126" alt="image" src="https://github.com/user-attachments/assets/28366d53-c716-4bb9-b19c-7771a179b2a8">
+
  
 
