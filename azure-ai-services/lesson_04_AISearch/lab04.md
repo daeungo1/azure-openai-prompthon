@@ -33,6 +33,8 @@
 - Indexes에서 해당 Index 선택 및 검색 버튼 클릭
   <img width="853" alt="image" src="https://github.com/user-attachments/assets/d3a3daea-9417-44f8-af1f-cc48e57c58e6">
   <img width="944" alt="image" src="https://github.com/user-attachments/assets/eb35456e-fa31-4a06-a5e1-78886636aeec">
+ 
+.
 
 ##### 2.2 Overview 탭에서 Import data 선택
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/01885fc5-268d-4b5d-b067-c1fdfd77a35f">
@@ -47,8 +49,37 @@
 - 다음 단계 진행 후, Customize target index 진행
   <img width="251" alt="image" src="https://github.com/user-attachments/assets/d0fb86cf-e83f-4741-b964-d8adb1949692">
 - index 이름 설정 및 key는 id로 지정하기
-  <img width="730" alt="image" src="https://github.com/user-attachments/assets/248be0f4-3110-43bd-8bf1-d0a59661a8b4">
-- 
+  <img width="785" alt="image" src="https://github.com/user-attachments/assets/2ea3eb6d-0691-4d07-8f32-cb6ee0931b8c">
+
+- AzureSearch_DocumentKey 이하 필드는 delete하기
+  <img width="1045" alt="image" src="https://github.com/user-attachments/assets/508bfe3f-a45e-4efb-94df-0a8e2735a9c4">
+
+- content_vector 필드의 Type 을 Collection(Edm.Single)로 변경하기
+  <img width="373" alt="image" src="https://github.com/user-attachments/assets/6a0d602b-ea52-45ae-b05e-dea0e14c0b15">
+- content_vector 필드에 대하여  configure vector field 클릭
+  <img width="920" alt="image" src="https://github.com/user-attachments/assets/8c2f68f0-47e3-440b-9a6f-0cc28879922d">
+
+- Dimensions를 embedding-ada-002의 vector size이 1536으로 설정후 Vector Search Profile 생성하기 클릭
+  <img width="905" alt="image" src="https://github.com/user-attachments/assets/351381fe-e0de-40d8-a7c3-f4b7ce4e1c8d">
+- Algorithms 생성하기 클릭
+  <img width="472" alt="image" src="https://github.com/user-attachments/assets/deae83b5-98d7-46fd-a65c-4a3082c72dad">
+
+- hnsw 또는 KNN 선택 후, 저장 두번 클릭
+  <img width="479" alt="image" src="https://github.com/user-attachments/assets/d14a1bd8-38c0-4a6f-ab7e-3466fbf7771c">
+  <img width="485" alt="image" src="https://github.com/user-attachments/assets/0fc93f8a-f88a-4c3b-8205-c0d6f33ce98e">
+
+- Next : Create an Indexer 클릭 후, Submit
+  <img width="661" alt="image" src="https://github.com/user-attachments/assets/aa52a316-19b5-43a9-a643-7b6ea634fff8">
+- Indexes에서 해당 Index 선택 및 검색 버튼 클릭
+  <img width="904" alt="image" src="https://github.com/user-attachments/assets/12826e90-00a5-454a-8664-a3f8fb4d7e18">
+  <img width="869" alt="image" src="https://github.com/user-attachments/assets/9a845f5d-820b-4011-a374-44d890d50f6c">
+
+- Semantic Configurations 생성하기
+  <img width="602" alt="image" src="https://github.com/user-attachments/assets/bf009a00-fbab-4616-9244-47ae69623d7e">
+  Name은 semantic으로 설정후, title field와 field name에 설정 후 저장
+  <img width="520" alt="image" src="https://github.com/user-attachments/assets/bf9eb1a3-9c44-4886-8ed0-3483bdcb982d">
+- 최종 저장 버튼 클릭
+  <img width="887" alt="image" src="https://github.com/user-attachments/assets/142783e2-03ed-4b46-b897-800843e57e32">
 
 
 
