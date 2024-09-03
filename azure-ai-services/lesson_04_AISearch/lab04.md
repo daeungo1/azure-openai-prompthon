@@ -1,4 +1,5 @@
-<img width="773" alt="image" src="https://github.com/user-attachments/assets/d397c26e-7add-4d48-8974-2677687083af">## Azure AI Search에서 직접 Index 생성하기
+
+## Azure AI Search에서 직접 Index 생성하기
 
 1. Azure Storage Account 에서 Container 생성하기 : pdfdata / wikidata
    <img width="1110" alt="image" src="https://github.com/user-attachments/assets/f1ca4842-8692-4e13-a52d-cff5b95392f3">
@@ -33,5 +34,25 @@
   <img width="853" alt="image" src="https://github.com/user-attachments/assets/d3a3daea-9417-44f8-af1f-cc48e57c58e6">
   <img width="944" alt="image" src="https://github.com/user-attachments/assets/eb35456e-fa31-4a06-a5e1-78886636aeec">
 
+##### 2.2 Overview 탭에서 Import data 선택
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/01885fc5-268d-4b5d-b067-c1fdfd77a35f">
+- 대상 Blob Storage의 Container 선택 : wikidata
+<img width="608" alt="image" src="https://github.com/user-attachments/assets/e278142d-7a92-4535-a489-80dbbb39505c">
+
+- 데이터명  wikidata, Parsing mode는 JSON lines로 설정 후, Choose an existing connection 클릭
+  <img width="611" alt="image" src="https://github.com/user-attachments/assets/dd2297d3-c123-4cde-af0d-b5ca4f9854ab">
+- 대상 Storage Account 선택 및 container 선택
+  <img width="971" alt="image" src="https://github.com/user-attachments/assets/548913e1-246d-4312-a97a-60d98bfd9708">
+  <img width="848" alt="image" src="https://github.com/user-attachments/assets/310c514d-2897-4e6f-aba2-57f401293dea">
+- 다음 단계 진행 후, Customize target index 진행
+  <img width="251" alt="image" src="https://github.com/user-attachments/assets/d0fb86cf-e83f-4741-b964-d8adb1949692">
+- index 이름 설정 및 key는 id로 지정하기
+  <img width="730" alt="image" src="https://github.com/user-attachments/assets/248be0f4-3110-43bd-8bf1-d0a59661a8b4">
+- 
+
+
+
+
+  
 
    
