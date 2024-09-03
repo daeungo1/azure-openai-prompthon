@@ -21,7 +21,8 @@ Azure 구독이 필요하며, AI 프로젝트와 AI 허브 리소스, 콘텐츠 
 #### 실습 단계
 - AI Studio에서 Project 생성하기
 - AzureAI Studio Playground 사용하기.
-- 프롬프트 플로우 플로우 생성하기.
+
+  
 
 #### 설정
 
