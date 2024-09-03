@@ -19,11 +19,9 @@ Azure 구독이 필요하며, AI 프로젝트와 AI 허브 리소스, 콘텐츠 
 - [Azure OpenAI 모델 배포](#azure-openai-모델-배포)
 
 #### 실습 단계
-
-1) AzureAI Studio Playground 사용하기.
-2) 오픈 소스 LLM 모델 사용하기.
-3) 콘텐츠 안전에서 프롬프트 테스트하기.
-4) 프롬프트 플로우 플로우 생성하기.
+- AI Studio에서 Project 생성하기
+- AzureAI Studio Playground 사용하기.
+- 프롬프트 플로우 플로우 생성하기.
 
 #### 설정
 
@@ -79,21 +77,7 @@ AI Studio의 **빌드** 탭에서 새로 생성한 프로젝트에 액세스한 
 
 이제 **배포**를 클릭하면 모델 배포가 생성됩니다. 이제 Playground에서 테스트할 수 있습니다.
 
-##### 콘텐츠 안전 서비스 생성
-
-이 실습이 끝나면 콘텐츠 안전을 테스트해 보겠습니다. 아래 링크를 클릭하여 서비스를 생성하세요: [https://aka.ms/acs-create](https://aka.ms/acs-create). 
-
-AI 프로젝트에 사용한 리소스 그룹을 선택한 후, 다음 화면에서 제시된 단계를 따라 진행하여 생성 프로세스를 완료합니다. **검토 + 생성** 버튼을 클릭하세요.
-
-![LLMOps Workshop](images/08.04.2024_14.57.15_REC.png)
-
-그런 다음 **생성**을 클릭하여 서비스를 생성합니다.
-
-![LLMOps Workshop](images/08.04.2024_16.22.06_REC.png)
-
-완료되었습니다! 콘텐츠 안전 서비스가 생성되었습니다.
-
-![LLMOps Workshop](images/08.04.2024_14.58.21_REC.png)
+ 
 
 
 #### 실습 단계
@@ -104,7 +88,8 @@ AI 프로젝트에 사용한 리소스 그룹을 선택한 후, 다음 화면에
 
 ![LLMOps Workshop](images/16.12.2023_16.29.30_REC.png)
 
-이 실습에서는 모델이 고객과 통신사 대표 간의 대화에서 가치 있는 정보를 추출하여 각 대화 전사에 대한 JSON 파일을 생성하는 AI 어시스턴트입니다. 다음과 같은 형식으로 JSON으로 추출하고 포맷팅합니다:
+###### 시스템 메시지(한국어 버전) :
+당신은 고객과 통신사 대표 간의 대화에서 가치 있는 정보를 추출하여 각 대화 전사에 대한 JSON 파일을 생성하는 AI 어시스턴트입니다. 다음과 같은 형식으로 JSON으로 추출하고 포맷팅합니다:
 1. 고객 이름 [name]
 2. 고객 연락처 전화번호 [phone]
 3. 대화의 주요 주제 [topic]
@@ -115,12 +100,26 @@ AI 프로젝트에 사용한 리소스 그룹을 선택한 후, 다음 화면에
 
 확실한 정보만 추출하세요. 확실하지 않은 경우 JSON 파일에 "Unknown/Not Found"라고 작성하세요.
 
-복사한 후 **변경 사항 적용**을 선택하세요.
+###### 시스템 메시지(영문 버전) :
+ You're an AI assistant that helps Lamna Healthcare Customer Service to extract valuable information from their conversations by creating JSON files for each conversation transcription you receive. You always try to extract and format as a JSON:
+ 1. Customer Name [name]
+ 2. Customer Contact Phone [phone]
+ 3. Main Topic of the Conversation [topic]
+ 4. Customer Sentiment (Neutral, Positive, Negative)[sentiment]
+ 5. How the Agent Handled the Conversation [agent_behavior]
+ 6. What was the FINAL Outcome of the Conversation [outcome]
+ 7. A really brief Summary of the Conversation [summary]
+
+ Only extract information that you're sure. If you're unsure, write "Unknown/Not Found" in the JSON file.
+
+위를 복사한 후 **변경 사항 적용**을 선택하세요.
+
 
 ![LLMOps Workshop](images/06.02.2024_21.48.36_REC.png)
 
 그런 다음 다음 텍스트를 채팅 세션에 입력하고 전송 버튼을 클릭하세요:
 
+한글 버전 :
 ```
 Agent: 안녕하세요, 텔코 고객 서비스에 오신 것을 환영합니다. 저는 홍길동입니다. 어떻게 도와드릴까요?
 Client: 안녕하세요, 홍길동씨. 저는 모바일 데이터 요금제에 문제가 있어 전화드렸습니다. 인터넷이 매우 느리고 앱을 사용하거나 인터넷을 브라우징할 수 없습니다.
@@ -144,20 +143,33 @@ Agent: 물론, 홍길동씨. 언제든지 전화해 주세요. 지금 전화한 
 Client: 아니요, 그게 다예요. 신경 써 주셔서 감사합니다.
 Agent: 홍길동씨, 감사합니다. 좋은 하루 보내세요. 안녕히 가세요.
 ```
+영문 버전 : 
+```
+Agent: Hello, welcome to Lamna Healthcare customer service. My name is Juan, how can I assist you?
+Client: Hello, Juan. I'm calling because I'm having issues with my medical bill I just received few days ago. It's incorrect and it does not match the numbers I was presented before my medical procedure.
+Agent: I'm very sorry for the inconvenience, sir. Could you please tell me your phone number and your full name?
+Client: Yes, sure. My number is 011-4567-8910 and my name is Martín Pérez.
+Agent: Thank you, Mr. Pérez. I'm going to check your plan, you deduction limits and current year transactions towards your deductions. One moment, please.
+Client: Okay, thank you.
+Agent: Mr. Pérez, I've reviewed your plan and I see that you have the Silver basic plan of $3,000 deductable. Is that correct?
+Client: Yes, that's correct.
+Agent: Well, I would like to inform you that you have not met your deductible yet and $2,800 of the procedure will be still be your responsability and that will meet your deductible for the year.
+Client: What? How is that possible? I paid over $2,000 already towards my deductable this year, I should only be $1,000 away from reaching my deductible not $2,800. 
+Agent: I understand, Mr. Pérez. But keep in mind that not all fees your pay to doctors and labs and medications count towards your deductible. 
+Client: Well, but they didn't explain that to me when I contracted the plan. They told me that everything I pay from my pocket towards doctors, specialists, labs and medications will count towards my deductable. I feel cheated.
+Agent: I apologize, Mr. Pérez. It was not our intention to deceive you. If you think the deductable is too high, I recommed changing the plan to Gold at the next renewal window and that will bring the deductable to $1,000 for the new year.
+Client: And how much would that cost me?
+Agent: The plan rates will come out in November, you can call us back then or check the new rates online at that time.
+Client: Mmm, I don't know. Isn't there another option? Can't you reduce the amount I have to pay for this bill as I was not explained how the deductible work correctly?
+Agent: I'm sorry, Mr. Pérez. I don't have the power to change the bill or your deductible under the current Silver plan.
+Client: Well, let me think about it. Can I call later to confirm?
+Agent: Of course, Mr. Pérez. You can call whenever you want. The number is the same one you dialed now. Is there anything else I can help you with?
+Client: No, that's all. Thank you for your attention.
+Agent: Thank you, Mr. Pérez. Have a good day. Goodbye.
+```
 
 결과:
 
 ![LLMOps Workshop](images/17.12.2023_20.36.17_REC.png)
-
-#### Llama 2 배포 삭제하기
-
-이 실습에서는 Llama2 모델을 배포하기 위해 **Standard_NC24s_v3** SKU를 사용했습니다. 다음 실습에서 사용하지 않을 것이므로 고비용 발생을 방지하기 위해 이 배포를 삭제하는 것이 좋습니다.
-
-이를 위해 Llama2 배포 화면에서 **배포 삭제**를 선택합니다.
-
-![LLMOps Workshop](images/08.04.2024_16.31.56_REC.png)
-
-다음 화면에 표시된대로 **삭제**를 클릭하여 삭제를 완료합니다.
-
-![LLMOps Workshop](images/08.04.2024_16.27.10_REC.png)
+ 
 
