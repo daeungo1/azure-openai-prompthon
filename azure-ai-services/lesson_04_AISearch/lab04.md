@@ -19,13 +19,15 @@
 2. AI search에서 데이터 로드 및 검색 Index 생성하기
 ##### 2.1 Overview 탭에서 Import and Vetorize data 선택
 <img width="764" alt="image" src="https://github.com/user-attachments/assets/13f051d4-e37e-4bf3-b92b-66e2d9c2d686">
+
 - Blob storage 선택 후, 대상 Storage Account 및 Container pdfdata 선택
+  
 <img width="866" alt="image" src="https://github.com/user-attachments/assets/00307227-1d9b-4247-b551-717bfd741ef5">
 <img width="833" alt="image" src="https://github.com/user-attachments/assets/ed6c6d41-70de-4061-8e0a-91bf4fbc6c3d">
-- Vectorize your text 를 위한 OpenAI 서비스 및 Embedding 모델 선택
-<img width="919" alt="image" src="https://github.com/user-attachments/assets/6c59adb2-e255-46f7-8786-35d421cec179">
 
-<img width="785" alt="image" src="https://github.com/user-attachments/assets/9c0e421a-9660-4331-9658-b9c785040c69">
+- Vectorize your text 를 위한 OpenAI 서비스 및 Embedding 모델 선택
+  <img width="919" alt="image" src="https://github.com/user-attachments/assets/6c59adb2-e255-46f7-8786-35d421cec179">
+  <img width="785" alt="image" src="https://github.com/user-attachments/assets/9c0e421a-9660-4331-9658-b9c785040c69">
 
 - Index 이름 설정 및 생성하기
   <img width="773" alt="image" src="https://github.com/user-attachments/assets/9be65933-6685-4746-bc7d-aa8a8bb6b2eb">
@@ -37,9 +39,11 @@
 .
 
 ##### 2.2 Overview 탭에서 Import data 선택
+
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/01885fc5-268d-4b5d-b067-c1fdfd77a35f">
+
 - 대상 Blob Storage의 Container 선택 : wikidata
-<img width="608" alt="image" src="https://github.com/user-attachments/assets/e278142d-7a92-4535-a489-80dbbb39505c">
+  <img width="608" alt="image" src="https://github.com/user-attachments/assets/e278142d-7a92-4535-a489-80dbbb39505c">
 
 - 데이터명  wikidata, Parsing mode는 JSON lines로 설정 후, Choose an existing connection 클릭
   <img width="611" alt="image" src="https://github.com/user-attachments/assets/dd2297d3-c123-4cde-af0d-b5ca4f9854ab">
