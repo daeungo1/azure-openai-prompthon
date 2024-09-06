@@ -3,7 +3,7 @@
 이 리포지토리에는 Azure OpenAI에서 제공하는 GPT(Generative Pre-trained Transformer)를 사용하는 기본 방법을 이해하고 샘플 솔루션을 및 다양한 사용 사례를 통해 이해에 도움이 되는 리소스가 포함되어 있습니다.
 
 ### Github 링크 : bit.ly/4bHljhT
-### 워크샵 자료 Download : 씨젠 워크샵 PDF 문서 [2024_Seegene_AIworkshop.pdf](https://github.com/user-attachments/files/16882728/2024_Seegene_AIworkshop.pdf)
+### 워크샵 자료 Download : 워크샵 PDF 문서 [2024_AIworkshop.pdf](https://github.com/user-attachments/files/16882728/2024_Seegene_AIworkshop.pdf)
 
 
 
